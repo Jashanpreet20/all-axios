@@ -52,7 +52,7 @@ export default function Posts() {
     get();
   }, []);
   return (
-    <div className="bg-black max-w-full max-h-full gap-3">
+    <div className="bg-black w-full max-h-full gap-3">
       <Header post={post} setPost={setPost} editData={editData} setEditData={setEditData} />
 
       <div className="flex flex-wrap w-9/12 items-center justify-center mx-auto min-h-[50vh]">

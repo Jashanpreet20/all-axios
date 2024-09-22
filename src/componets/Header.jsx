@@ -66,15 +66,15 @@ export default function Header({ post, setPost, editData, setEditData }) {
   }, [editData]);
 
   return (
-    <div className="max-w-max px-7 mx-auto py-20">
+    <div className="w-full px-7 mx-auto py-20">
       <div className=" bg-black px-2 py-3">
         <form onSubmit={handleSubmit}>
           <div className="flex items-center justify-center gap-5">
             <input
               type="text"
-              className={`bg-gray-900 text-darkBlue text-xl text-start outline-none ${
+              className={`bg-gray-900 text-darkBlue text-balance text-start outline-none ${
                 data.title && "border-b-4 border-darkBlue"
-              }   font-bold px-3 py-3 `}
+              }   font-bold px-2 py-2`}
               placeholder="Add Title"
               value={data.title}
               name={"title"}
@@ -82,9 +82,9 @@ export default function Header({ post, setPost, editData, setEditData }) {
             />
             <input
               type="text"
-              className={`bg-gray-900 text-darkBlue text-xl text-start outline-none ${
+              className={`bg-gray-900 text-darkBlue text-balance text-start outline-none ${
                 data.body && "border-b-4 border-darkBlue"
-              }   font-bold px-3 py-3 `}
+              }   font-bold px-2 py-2 `}
               placeholder="Add Post"
               value={data.body}
               name={"body"}
@@ -93,7 +93,7 @@ export default function Header({ post, setPost, editData, setEditData }) {
             <button
               type="submit"
               value={isEmpty ? "Add" : "Edit"}
-              className="bg-darkBlue text-black px-4 py-3 text-xl font-bold rounded-md "
+              className="bg-darkBlue text-black px-2 py-2 text-balance font-bold rounded-md "
             >
               {isEmpty ? "Add" : "Edit"}
             </button>
